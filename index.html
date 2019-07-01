@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>3formulier</title>
+		<link href="styles.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript">
+			function bedankGebruiker () {
+
+					var voornaam = document.getElementById('naam').value;
+
+					var geboortedatum = document.getElementById('geboortedatum').value;
+					
+
+					var email = document.getElementById('email').value;
+	
+					alert('Beste' + naam + ',\n\nU bent geboren op ' + geboortedatum + ' en uw e-mailadres is' + email + '\n\Bedankt voor het invullen. ');
+					}
+		</script>
+	</head>
+	<body>
+		<form action="#" method="get" onsubmit="bedankGebruiker();">
+			<h1>Introductieformulier</h1>
+			<p>Hieronder mag u uw gegevens invullen.</p>
+			<fieldset>
+				<h1>Gegevens</h1>
+				<label for="naam">Voornaam + Achternaam</label>
+				<br />
+				<input type="text" id="naam" name="naam" />
+				<br />
+				<label for="geboortedatum">Geboortedatum</label>
+				<br />
+				<input type="date" id="geboortedatum" name="date" placeholder="Dag-Maand-Jaar" />
+				<br />
+				<label for="email">E-mailadres</label>
+				<br/>
+				<input type="email" id="email" name="email"/>
+				<br />
+				<input type="submit" name="Verzenden" />
+			</fieldset>
+		</form>
+		<p>In deze opdracht kan je al je gegevens invullen op een formulier, hierna krijg je een melding van de gegevens die er zijn opgeschreven. De invoervelden zijn dus gekoppeld aan een alert.</P>
+	</body>
+</html>
